@@ -29,7 +29,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <div className={`transition-slow ${isVisible ? 'reveal-up in-view' : 'reveal-up'}`}>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-display font-semibold mb-6 leading-tight tracking-tight">
             Crafting Digital
             <span className="block bg-gradient-to-r from-accent to-blue-400 bg-clip-text text-transparent">
               Experiences

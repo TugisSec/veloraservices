@@ -44,11 +44,12 @@ const Index = () => {
             
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-primary-foreground/80">
-                <li>hello@webcraftstudio.com</li>
-                <li>+1 (555) 123-4567</li>
-                <li>San Francisco, CA</li>
-              </ul>
+               <ul className="space-y-2 text-primary-foreground/80">
+                 <li>veloradigitalservices@gmail.com</li>
+                 <li>+639512136957</li>
+                 <li>Pasay City, Philippines</li>
+                 <li>@nino.telesio</li>
+               </ul>
             </div>
           </div>
           

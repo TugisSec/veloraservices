@@ -28,68 +28,68 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+    <section id="contact" className="py-16 sm:py-20 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-foreground">
             Let's Build Something Amazing
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             Ready to start your project? Get in touch with us today and let's discuss 
             how we can bring your vision to life.
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-12 sm:gap-16">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-foreground">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-foreground">
                 Get in Touch
               </h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
                 We're here to help you succeed online. Whether you need a new website, 
                 a redesign, or ongoing support, our team is ready to deliver exceptional results.
               </p>
             </div>
             
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-accent-foreground" />
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 accent-gradient rounded-xl flex items-center justify-center">
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-accent-foreground" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Email</p>
-                  <p className="text-muted-foreground">hello@webcraftstudio.com</p>
+                  <p className="font-medium text-foreground text-sm sm:text-base">Email</p>
+                  <p className="text-muted-foreground text-sm sm:text-base">hello@webcraftstudio.com</p>
                 </div>
               </div>
               
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-accent-foreground" />
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 accent-gradient rounded-xl flex items-center justify-center">
+                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-accent-foreground" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Phone</p>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="font-medium text-foreground text-sm sm:text-base">Phone</p>
+                  <p className="text-muted-foreground text-sm sm:text-base">+1 (555) 123-4567</p>
                 </div>
               </div>
               
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-accent-foreground" />
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 accent-gradient rounded-xl flex items-center justify-center">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-accent-foreground" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Location</p>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="font-medium text-foreground text-sm sm:text-base">Location</p>
+                  <p className="text-muted-foreground text-sm sm:text-base">San Francisco, CA</p>
                 </div>
               </div>
             </div>
           </div>
           
           {/* Contact Form */}
-          <div className="bg-card p-8 rounded-2xl shadow-soft">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-card p-6 sm:p-8 rounded-2xl shadow-soft">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+              <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-card-foreground mb-2">
                     Full Name
@@ -101,7 +101,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast text-sm sm:text-base"
                     placeholder="Your full name"
                   />
                 </div>
@@ -117,7 +117,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast text-sm sm:text-base"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -133,7 +133,7 @@ const ContactSection = () => {
                   value={formData.project}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast text-sm sm:text-base"
                 >
                   <option value="">Select project type</option>
                   <option value="new-website">New Website</option>
@@ -155,17 +155,17 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={5}
-                  className="w-full px-4 py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast resize-none"
+                  rows={4}
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast resize-none text-sm sm:text-base"
                   placeholder="Tell us about your project, timeline, and any specific requirements..."
                 ></textarea>
               </div>
               
               <button
                 type="submit"
-                className="w-full btn-accent text-lg py-4 flex items-center justify-center gap-2"
+                className="w-full btn-accent text-base sm:text-lg py-3 sm:py-4 flex items-center justify-center gap-2"
               >
-                <Send className="w-5 h-5" />
+                <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                 Send Message
               </button>
             </form>

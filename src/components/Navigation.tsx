@@ -36,11 +36,11 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <button 
               onClick={() => scrollToSection('hero')}
-              className={`text-lg sm:text-xl lg:text-2xl font-bold transition-fast ${
+              className={`text-lg sm:text-xl lg:text-2xl font-sans font-light tracking-wide transition-fast ${
                 isScrolled ? 'text-foreground hover:text-accent' : 'text-white hover:text-white/80'
               }`}
             >
-              WebCraft Studio
+              Velora Services
             </button>
           </div>
           

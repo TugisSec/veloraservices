@@ -14,11 +14,11 @@ const projects = [
   },
   {
     id: 2,
-    title: "Corporate Website",
-    description: "Professional business website with elegant design, team showcases, and optimized performance.",
+    title: "Wedding Website",
+    description: "Elegant wedding website with beautiful galleries, RSVP system, and romantic design elements.",
     image: projectCorporate,
-    tech: ["Next.js", "TypeScript", "Tailwind", "CMS"],
-    category: "Corporate"
+    tech: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+    category: "Wedding"
   },
   {
     id: 3,

@@ -123,46 +123,67 @@ const ProjectsGallery = () => {
                          <PopoverTrigger asChild>
                            <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>
                          </PopoverTrigger>
-                         <PopoverContent className="w-96 p-0" side="top">
-                           <div className="bg-gradient-to-b from-rose-50 to-pink-50 dark:from-rose-950 dark:to-pink-950 rounded-lg overflow-hidden">
-                             {/* Header */}
-                             <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-4 text-center border-b border-rose-200 dark:border-rose-800">
-                               <Heart className="w-6 h-6 text-rose-500 mx-auto mb-2" />
-                               <h3 className="text-lg font-serif text-rose-800 dark:text-rose-200">Sarah & Michael</h3>
-                               <p className="text-sm text-rose-600 dark:text-rose-300">June 15, 2024</p>
+                         <PopoverContent className="w-80 p-0" side="top">
+                           <div className="bg-gradient-to-b from-rose-50 to-pink-50 dark:from-rose-950 dark:to-pink-950 rounded-lg overflow-hidden shadow-xl">
+                             {/* Hero Image */}
+                             <div className="relative h-32 overflow-hidden">
+                               <img 
+                                 src={projectCorporate} 
+                                 alt="Wedding Template Hero" 
+                                 className="w-full h-full object-cover"
+                               />
+                               <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                                 <div className="text-center text-white">
+                                   <Heart className="w-6 h-6 mx-auto mb-1" />
+                                   <h3 className="text-lg font-serif">Sarah & Michael</h3>
+                                   <p className="text-sm opacity-90">June 15, 2024</p>
+                                 </div>
+                               </div>
+                             </div>
+                             
+                             {/* Navigation Bar */}
+                             <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-4 py-2 border-b border-rose-200 dark:border-rose-800">
+                               <div className="flex justify-center space-x-4 text-xs">
+                                 <span className="text-rose-600 dark:text-rose-400 font-medium">Our Story</span>
+                                 <span className="text-gray-600 dark:text-gray-400">Photos</span>
+                                 <span className="text-gray-600 dark:text-gray-400">Details</span>
+                                 <span className="text-gray-600 dark:text-gray-400">RSVP</span>
+                               </div>
                              </div>
                              
                              {/* Content */}
-                             <div className="p-4 space-y-4">
+                             <div className="p-4 space-y-3">
                                <div className="text-center">
-                                 <p className="text-sm text-gray-600 dark:text-gray-300 font-serif italic">
-                                   "Two hearts, one love, endless possibilities"
+                                 <p className="text-xs text-gray-600 dark:text-gray-300 font-serif italic">
+                                   "Two hearts becoming one under the summer sky"
                                  </p>
                                </div>
                                
-                               <div className="grid grid-cols-2 gap-3 text-xs">
-                                 <div className="bg-white/50 dark:bg-gray-800/50 p-3 rounded-lg text-center">
-                                   <Calendar className="w-4 h-4 text-rose-500 mx-auto mb-1" />
-                                   <p className="font-medium text-gray-700 dark:text-gray-200">Ceremony</p>
-                                   <p className="text-gray-500 dark:text-gray-400">4:00 PM</p>
+                               <div className="grid grid-cols-2 gap-2 text-xs">
+                                 <div className="bg-white/60 dark:bg-gray-800/60 p-2 rounded-lg text-center">
+                                   <Calendar className="w-3 h-3 text-rose-500 mx-auto mb-1" />
+                                   <p className="font-medium text-gray-700 dark:text-gray-200 text-xs">Ceremony</p>
+                                   <p className="text-gray-500 dark:text-gray-400 text-xs">4:00 PM</p>
+                                   <p className="text-gray-500 dark:text-gray-400 text-xs">Rose Garden</p>
                                  </div>
-                                 <div className="bg-white/50 dark:bg-gray-800/50 p-3 rounded-lg text-center">
-                                   <MapPin className="w-4 h-4 text-rose-500 mx-auto mb-1" />
-                                   <p className="font-medium text-gray-700 dark:text-gray-200">Venue</p>
-                                   <p className="text-gray-500 dark:text-gray-400">Rose Garden</p>
+                                 <div className="bg-white/60 dark:bg-gray-800/60 p-2 rounded-lg text-center">
+                                   <MapPin className="w-3 h-3 text-rose-500 mx-auto mb-1" />
+                                   <p className="font-medium text-gray-700 dark:text-gray-200 text-xs">Reception</p>
+                                   <p className="text-gray-500 dark:text-gray-400 text-xs">7:00 PM</p>
+                                   <p className="text-gray-500 dark:text-gray-400 text-xs">Grand Ballroom</p>
                                  </div>
                                </div>
                                
-                               <div className="bg-white/50 dark:bg-gray-800/50 p-3 rounded-lg text-center">
-                                 <Users className="w-4 h-4 text-rose-500 mx-auto mb-1" />
-                                 <p className="text-xs font-medium text-gray-700 dark:text-gray-200">RSVP by May 1st</p>
-                                 <button className="mt-2 bg-rose-500 text-white px-3 py-1 rounded-full text-xs hover:bg-rose-600 transition-colors">
+                               <div className="bg-rose-100 dark:bg-rose-900/30 p-3 rounded-lg text-center">
+                                 <Users className="w-4 h-4 text-rose-600 dark:text-rose-400 mx-auto mb-1" />
+                                 <p className="text-xs font-medium text-rose-800 dark:text-rose-200 mb-2">RSVP by May 1st</p>
+                                 <button className="bg-rose-500 text-white px-4 py-1 rounded-full text-xs hover:bg-rose-600 transition-colors">
                                    Confirm Attendance
                                  </button>
                                </div>
                                
                                <div className="text-center pt-2 border-t border-rose-200 dark:border-rose-800">
-                                 <p className="text-xs text-gray-500 dark:text-gray-400">Wedding Website Template Preview</p>
+                                 <p className="text-xs text-gray-400 dark:text-gray-500">Wedding Website Template</p>
                                </div>
                              </div>
                            </div>

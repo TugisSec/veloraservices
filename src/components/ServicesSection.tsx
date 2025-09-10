@@ -80,7 +80,7 @@ const ServicesSection = () => {
               <div
                 key={index}
                 ref={el => serviceRefs.current[index] = el}
-                className={`bg-card p-8 rounded-2xl shadow-soft hover:shadow-medium transition-smooth ${
+                className={`glass-card p-8 rounded-2xl shadow-soft hover:shadow-medium transition-smooth ${
                   visibleItems.includes(index) ? 'reveal-up in-view' : 'reveal-up'
                 }`}
                 style={{ transitionDelay: `${index * 0.1}s` }}

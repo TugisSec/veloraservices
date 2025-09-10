@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { X, Play } from "lucide-react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger, PopoverClose } from "@/components/ui/popover";
 import projectEcommerce from "@/assets/project-ecommerce.jpg";
 import projectCorporate from "@/assets/project-corporate.jpg";
 import projectPortfolio from "@/assets/project-portfolio.jpg";
@@ -126,9 +126,11 @@ const ProjectsGallery = () => {
                           <PopoverContent className="w-[800px] p-0 bg-background border shadow-lg" side="top">
                             <div className="relative bg-white rounded-lg overflow-hidden max-h-[80vh] overflow-y-auto">
                               {/* Close Button */}
-                              <button className="absolute top-3 right-3 z-10 w-8 h-8 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-colors">
-                                <X className="w-4 h-4 text-white" />
-                              </button>
+                              <PopoverClose asChild>
+                                <button className="absolute top-3 right-3 z-10 w-8 h-8 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-colors">
+                                  <X className="w-4 h-4 text-white" />
+                                </button>
+                              </PopoverClose>
                               
                               {/* Wedding Website Mockup */}
                               <div className="relative">

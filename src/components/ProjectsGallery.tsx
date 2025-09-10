@@ -127,7 +127,7 @@ const ProjectsGallery = () => {
                             <div className="relative bg-white rounded-lg overflow-hidden max-h-[85vh] overflow-y-auto">
                               {/* Close Button */}
                               <PopoverClose asChild>
-                                <button className="absolute top-2 right-2 sm:top-3 sm:right-3 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-colors">
+                                <button className="fixed top-2 right-2 sm:top-3 sm:right-3 z-50 w-10 h-10 sm:w-12 sm:h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-colors">
                                   <X className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                 </button>
                               </PopoverClose>

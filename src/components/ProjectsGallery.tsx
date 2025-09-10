@@ -121,7 +121,7 @@ const ProjectsGallery = () => {
                      {project.category === "Wedding" ? (
                        <Popover>
                          <PopoverTrigger asChild>
-                           <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>
+                            <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Sample</button>
                          </PopoverTrigger>
                           <PopoverContent className="w-[95vw] max-w-4xl p-0 bg-background border shadow-lg" side="top">
                             <div className="relative bg-white rounded-lg overflow-hidden max-h-[85vh] overflow-y-auto">
@@ -146,7 +146,7 @@ const ProjectsGallery = () => {
                      ) : project.category === "Landing Page" ? (
                        <Popover>
                          <PopoverTrigger asChild>
-                           <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>
+                            <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Sample</button>
                          </PopoverTrigger>
                           <PopoverContent className="w-[95vw] max-w-4xl p-0 bg-background border shadow-lg" side="top">
                             <div className="relative bg-white rounded-lg overflow-hidden max-h-[85vh] overflow-y-auto">
@@ -171,7 +171,7 @@ const ProjectsGallery = () => {
                      ) : project.category === "Portfolio" ? (
                        <Popover>
                          <PopoverTrigger asChild>
-                           <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>
+                           <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Sample</button>
                          </PopoverTrigger>
                           <PopoverContent className="w-[95vw] max-w-4xl p-0 bg-background border shadow-lg" side="top">
                             <div className="relative bg-white rounded-lg overflow-hidden max-h-[85vh] overflow-y-auto">

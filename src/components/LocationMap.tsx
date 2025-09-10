@@ -6,7 +6,7 @@ const LocationMap = () => {
       <h4 className="text-sm font-medium mb-3 text-card-foreground">Find Us</h4>
       <div className="w-full h-32 rounded-md overflow-hidden">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123650.1234!2d121.0244!3d14.5378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f35e06f1b1%3A0x8b9e7c5e6a5f5a1!2sPasay%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sph!4v1647123456789!5m2!1sen!2sph"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30913.234567890123!2d121.00244140625!3d14.5378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f35e06f1b1%3A0x8b9e7c5e6a5f5a1!2sPasay%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sph!4v1647123456789!5m2!1sen!2sph&z=15"
           width="100%"
           height="100%"
           style={{ border: 0 }}

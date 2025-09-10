@@ -124,7 +124,7 @@ const ProjectsGallery = () => {
                            <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>
                          </PopoverTrigger>
                           <PopoverContent className="w-[95vw] max-w-4xl p-0 bg-background border shadow-lg" side="top">
-                            <div className="relative bg-white rounded-lg overflow-hidden max-h-[90vh] overflow-y-auto">
+                            <div className="relative bg-white rounded-lg overflow-hidden max-h-[85vh] overflow-y-auto">
                               {/* Close Button */}
                               <PopoverClose asChild>
                                 <button className="absolute top-2 right-2 sm:top-3 sm:right-3 z-10 w-6 h-6 sm:w-8 sm:h-8 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-colors">
@@ -137,7 +137,7 @@ const ProjectsGallery = () => {
                                 <img 
                                   src="/lovable-uploads/10e58aec-7d8b-45ac-80ba-d51e7ee0a27b.png"
                                   alt="Wedding Website Mockup"
-                                  className="w-full h-auto object-contain max-h-[80vh]"
+                                  className="w-full h-auto object-contain"
                                 />
                               </div>
                             </div>

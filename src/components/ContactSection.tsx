@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import LocationMap from "./LocationMap";
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -82,7 +83,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Location</p>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">Pasay City, Philippines</p>
                 </div>
               </div>
             </div>
@@ -135,6 +136,11 @@ const ContactSection = () => {
               </button>
             </form>
           </div>
+        </div>
+        
+        {/* Location Map */}
+        <div className="mt-16">
+          <LocationMap />
         </div>
       </div>
     </section>;

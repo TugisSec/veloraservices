@@ -6,11 +6,11 @@ import projectPortfolio from "@/assets/project-portfolio.jpg";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Modern online store with seamless shopping experience, payment integration, and responsive design.",
+    title: "Store Landing Page",
+    description: "Beautiful product showcase landing page with modern design, responsive layout, and optimized performance.",
     image: projectEcommerce,
-    tech: ["React", "Node.js", "Stripe", "MongoDB"],
-    category: "E-Commerce"
+    tech: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+    category: "Landing Page"
   },
   {
     id: 2,

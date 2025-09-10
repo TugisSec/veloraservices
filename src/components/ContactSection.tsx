@@ -88,58 +88,28 @@ const ContactSection = () => {
               </div>
             </div>
             
-            {/* Small Location Map */}
-            <div className="mt-8">
-              <LocationMap />
-            </div>
           </div>
           
-          {/* Contact Form */}
+          {/* Location Map */}
           <div className="bg-card p-8 rounded-2xl shadow-soft">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-card-foreground mb-2">
-                    Full Name
-                  </label>
-                  <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="w-full px-4 py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast" placeholder="Your full name" />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-card-foreground mb-2">
-                    Email Address
-                  </label>
-                  <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="w-full px-4 py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast" placeholder="your@email.com" />
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="project" className="block text-sm font-medium text-card-foreground mb-2">
-                  Project Type
-                </label>
-                <select id="project" name="project" value={formData.project} onChange={handleChange} required className="w-full px-4 py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast">
-                  <option value="">Select project type</option>
-                  <option value="new-website">New Website</option>
-                  <option value="redesign">Website Redesign</option>
-                  <option value="ecommerce">E-Commerce Platform</option>
-                  <option value="web-app">Web Application</option>
-                  <option value="maintenance">Maintenance & Support</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-card-foreground mb-2">
-                  Project Details
-                </label>
-                <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={5} className="w-full px-4 py-3 bg-input border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent transition-fast resize-none" placeholder="Tell us about your project, timeline, and any specific requirements..."></textarea>
-              </div>
-              
-              <button type="submit" className="w-full btn-accent text-lg py-4 flex items-center justify-center gap-2">
-                <Send className="w-5 h-5" />
-                Send Message
-              </button>
-            </form>
+            <h3 className="text-2xl font-semibold mb-6 text-card-foreground">
+              Our Location
+            </h3>
+            <div className="w-full h-96 rounded-xl overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30913.234567890123!2d121.00244140625!3d14.5378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f35e06f1b1%3A0x8b9e7c5e6a5f5a1!2sPasay%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sph!4v1647123456789!5m2!1sen!2sph&z=15"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Velora Services Location - Pasay City, Philippines"
+              />
+            </div>
+            <p className="mt-4 text-muted-foreground">
+              Located in the heart of Pasay City, Metro Manila. We're easily accessible and ready to meet with clients in person or virtually.
+            </p>
           </div>
         </div>
       </div>

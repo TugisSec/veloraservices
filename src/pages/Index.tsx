@@ -28,7 +28,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">WebCraft Studio</h3>
+              <h3 className="text-2xl font-bold mb-4">Velora Services</h3>
               <p className="text-primary-foreground/80 leading-relaxed">
                 Creating exceptional digital experiences that drive results and exceed expectations.
               </p>
@@ -46,16 +46,16 @@ const Index = () => {
             
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-primary-foreground/80">
-                <li>hello@webcraftstudio.com</li>
-                <li>+1 (555) 123-4567</li>
-                <li>San Francisco, CA</li>
+               <ul className="space-y-2 text-primary-foreground/80">
+                <li>veloradigitalservices@gmail.com</li>
+                <li>+639512136957</li>
+                <li>Pasay City, Philippines</li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-            <p>&copy; 2024 WebCraft Studio. All rights reserved.</p>
+            <p>&copy; 2024 Velora Services. All rights reserved.</p>
           </div>
         </div>
       </footer>

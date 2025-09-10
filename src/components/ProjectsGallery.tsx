@@ -123,40 +123,23 @@ const ProjectsGallery = () => {
                          <PopoverTrigger asChild>
                            <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>
                          </PopoverTrigger>
-                         <PopoverContent className="w-96 p-0 bg-background border shadow-lg" side="top">
-                           <div className="relative bg-black rounded-lg overflow-hidden">
-                             {/* Close Button */}
-                             <button className="absolute top-3 right-3 z-10 w-8 h-8 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-colors">
-                               <X className="w-4 h-4 text-white" />
-                             </button>
-                             
-                             {/* Video Player */}
-                             <div className="relative aspect-video bg-black">
-                               <video 
-                                 className="w-full h-full object-cover"
-                                 poster={projectCorporate}
-                                 controls
-                                 preload="metadata"
-                               >
-                                 <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-                                 Your browser does not support the video tag.
-                               </video>
-                               
-                               {/* Play overlay for poster */}
-                               <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-                                 <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                   <Play className="w-6 h-6 text-white ml-1" />
-                                 </div>
-                               </div>
-                             </div>
-                             
-                             {/* Video Title */}
-                             <div className="p-4 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 left-0 right-0 text-white">
-                               <h3 className="text-lg font-medium">Wedding Website Showcase</h3>
-                               <p className="text-sm text-gray-300">Beautiful wedding photography portfolio</p>
-                             </div>
-                           </div>
-                         </PopoverContent>
+                          <PopoverContent className="w-[800px] p-0 bg-background border shadow-lg" side="top">
+                            <div className="relative bg-white rounded-lg overflow-hidden max-h-[80vh] overflow-y-auto">
+                              {/* Close Button */}
+                              <button className="absolute top-3 right-3 z-10 w-8 h-8 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-colors">
+                                <X className="w-4 h-4 text-white" />
+                              </button>
+                              
+                              {/* Wedding Website Mockup */}
+                              <div className="relative">
+                                <img 
+                                  src="/lovable-uploads/10e58aec-7d8b-45ac-80ba-d51e7ee0a27b.png"
+                                  alt="Wedding Website Mockup"
+                                  className="w-full h-auto object-cover"
+                                />
+                              </div>
+                            </div>
+                          </PopoverContent>
                        </Popover>
                      ) : (
                        <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>

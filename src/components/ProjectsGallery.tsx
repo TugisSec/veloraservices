@@ -143,6 +143,31 @@ const ProjectsGallery = () => {
                             </div>
                           </PopoverContent>
                        </Popover>
+                     ) : project.category === "Landing Page" ? (
+                       <Popover>
+                         <PopoverTrigger asChild>
+                           <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>
+                         </PopoverTrigger>
+                          <PopoverContent className="w-[95vw] max-w-4xl p-0 bg-background border shadow-lg" side="top">
+                            <div className="relative bg-white rounded-lg overflow-hidden max-h-[85vh] overflow-y-auto">
+                              {/* Close Button */}
+                              <PopoverClose asChild>
+                                <button className="fixed top-2 right-2 sm:top-3 sm:right-3 z-50 w-10 h-10 sm:w-12 sm:h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-colors">
+                                  <X className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                                </button>
+                              </PopoverClose>
+                              
+                              {/* Store Landing Page Mockup */}
+                              <div className="relative">
+                                <img 
+                                  src="/lovable-uploads/2a36c457-c07f-46e1-b457-012a35eb24b6.png"
+                                  alt="Store Landing Page Mockup"
+                                  className="w-full h-auto object-contain"
+                                />
+                              </div>
+                            </div>
+                          </PopoverContent>
+                       </Popover>
                      ) : (
                        <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>
                      )}

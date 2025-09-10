@@ -36,7 +36,9 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="text-2xl font-bold text-white hover:text-white/80 transition-fast"
+              className={`text-2xl font-bold transition-fast ${
+                isScrolled ? 'text-foreground hover:text-accent' : 'text-white hover:text-white/80'
+              }`}
             >
               WebCraft Studio
             </button>

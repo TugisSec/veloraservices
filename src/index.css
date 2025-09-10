@@ -186,10 +186,10 @@
 
   /* Button styles */
   .btn-primary {
-    @apply bg-primary text-primary-foreground hover:bg-primary-muted transition-fast px-8 py-4 rounded-lg font-medium;
+    @apply bg-primary text-primary-foreground hover:bg-primary-muted transition-fast px-8 py-4 rounded-md font-medium;
   }
   
   .btn-accent {
-    @apply accent-gradient text-accent-foreground hover:opacity-90 transition-fast px-8 py-4 rounded-lg font-medium;
+    @apply accent-gradient text-accent-foreground hover:opacity-90 transition-fast px-8 py-4 rounded-md font-medium;
   }
 }

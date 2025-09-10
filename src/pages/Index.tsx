@@ -48,7 +48,7 @@ const Index = () => {
                  <li>veloradigitalservices@gmail.com</li>
                  <li>+639512136957</li>
                  <li>Pasay City, Philippines</li>
-                 <li>@nino.telesio</li>
+                 
                </ul>
             </div>
           </div>

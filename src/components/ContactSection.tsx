@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Facebook } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import LocationMap from "./LocationMap";
 const ContactSection = () => {
@@ -84,6 +84,23 @@ const ContactSection = () => {
                 <div>
                   <p className="font-medium text-foreground">Location</p>
                   <p className="text-muted-foreground">Pasay City, Philippines</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center">
+                  <Facebook className="w-6 h-6 text-accent-foreground" />
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">Facebook</p>
+                  <a 
+                    href="https://www.facebook.com/nino.telesio" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-accent transition-colors"
+                  >
+                    @nino.telesio
+                  </a>
                 </div>
               </div>
             </div>

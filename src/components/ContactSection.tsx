@@ -87,6 +87,11 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
+            
+            {/* Small Location Map */}
+            <div className="mt-8">
+              <LocationMap />
+            </div>
           </div>
           
           {/* Contact Form */}
@@ -136,11 +141,6 @@ const ContactSection = () => {
               </button>
             </form>
           </div>
-        </div>
-        
-        {/* Location Map */}
-        <div className="mt-16">
-          <LocationMap />
         </div>
       </div>
     </section>;

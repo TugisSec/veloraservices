@@ -88,9 +88,14 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center">
+                <a 
+                  href="https://www.facebook.com/nino.telesio" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center hover:scale-105 transition-transform cursor-pointer"
+                >
                   <Facebook className="w-6 h-6 text-accent-foreground" />
-                </div>
+                </a>
                 <div>
                   <p className="font-medium text-foreground">Facebook</p>
                   <a 

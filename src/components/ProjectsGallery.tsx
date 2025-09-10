@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Heart, Calendar, MapPin, Users } from "lucide-react";
+import { X, Play } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import projectEcommerce from "@/assets/project-ecommerce.jpg";
 import projectCorporate from "@/assets/project-corporate.jpg";
@@ -123,68 +123,37 @@ const ProjectsGallery = () => {
                          <PopoverTrigger asChild>
                            <button className="btn-accent w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">View Project</button>
                          </PopoverTrigger>
-                         <PopoverContent className="w-80 p-0" side="top">
-                           <div className="bg-gradient-to-b from-rose-50 to-pink-50 dark:from-rose-950 dark:to-pink-950 rounded-lg overflow-hidden shadow-xl">
-                             {/* Hero Image */}
-                             <div className="relative h-32 overflow-hidden">
-                               <img 
-                                 src={projectCorporate} 
-                                 alt="Wedding Template Hero" 
+                         <PopoverContent className="w-96 p-0 bg-background border shadow-lg" side="top">
+                           <div className="relative bg-black rounded-lg overflow-hidden">
+                             {/* Close Button */}
+                             <button className="absolute top-3 right-3 z-10 w-8 h-8 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-colors">
+                               <X className="w-4 h-4 text-white" />
+                             </button>
+                             
+                             {/* Video Player */}
+                             <div className="relative aspect-video bg-black">
+                               <video 
                                  className="w-full h-full object-cover"
-                               />
-                               <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                                 <div className="text-center text-white">
-                                   <Heart className="w-6 h-6 mx-auto mb-1" />
-                                   <h3 className="text-lg font-serif">Sarah & Michael</h3>
-                                   <p className="text-sm opacity-90">June 15, 2024</p>
+                                 poster={projectCorporate}
+                                 controls
+                                 preload="metadata"
+                               >
+                                 <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+                                 Your browser does not support the video tag.
+                               </video>
+                               
+                               {/* Play overlay for poster */}
+                               <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+                                 <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                                   <Play className="w-6 h-6 text-white ml-1" />
                                  </div>
                                </div>
                              </div>
                              
-                             {/* Navigation Bar */}
-                             <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-4 py-2 border-b border-rose-200 dark:border-rose-800">
-                               <div className="flex justify-center space-x-4 text-xs">
-                                 <span className="text-rose-600 dark:text-rose-400 font-medium">Our Story</span>
-                                 <span className="text-gray-600 dark:text-gray-400">Photos</span>
-                                 <span className="text-gray-600 dark:text-gray-400">Details</span>
-                                 <span className="text-gray-600 dark:text-gray-400">RSVP</span>
-                               </div>
-                             </div>
-                             
-                             {/* Content */}
-                             <div className="p-4 space-y-3">
-                               <div className="text-center">
-                                 <p className="text-xs text-gray-600 dark:text-gray-300 font-serif italic">
-                                   "Two hearts becoming one under the summer sky"
-                                 </p>
-                               </div>
-                               
-                               <div className="grid grid-cols-2 gap-2 text-xs">
-                                 <div className="bg-white/60 dark:bg-gray-800/60 p-2 rounded-lg text-center">
-                                   <Calendar className="w-3 h-3 text-rose-500 mx-auto mb-1" />
-                                   <p className="font-medium text-gray-700 dark:text-gray-200 text-xs">Ceremony</p>
-                                   <p className="text-gray-500 dark:text-gray-400 text-xs">4:00 PM</p>
-                                   <p className="text-gray-500 dark:text-gray-400 text-xs">Rose Garden</p>
-                                 </div>
-                                 <div className="bg-white/60 dark:bg-gray-800/60 p-2 rounded-lg text-center">
-                                   <MapPin className="w-3 h-3 text-rose-500 mx-auto mb-1" />
-                                   <p className="font-medium text-gray-700 dark:text-gray-200 text-xs">Reception</p>
-                                   <p className="text-gray-500 dark:text-gray-400 text-xs">7:00 PM</p>
-                                   <p className="text-gray-500 dark:text-gray-400 text-xs">Grand Ballroom</p>
-                                 </div>
-                               </div>
-                               
-                               <div className="bg-rose-100 dark:bg-rose-900/30 p-3 rounded-lg text-center">
-                                 <Users className="w-4 h-4 text-rose-600 dark:text-rose-400 mx-auto mb-1" />
-                                 <p className="text-xs font-medium text-rose-800 dark:text-rose-200 mb-2">RSVP by May 1st</p>
-                                 <button className="bg-rose-500 text-white px-4 py-1 rounded-full text-xs hover:bg-rose-600 transition-colors">
-                                   Confirm Attendance
-                                 </button>
-                               </div>
-                               
-                               <div className="text-center pt-2 border-t border-rose-200 dark:border-rose-800">
-                                 <p className="text-xs text-gray-400 dark:text-gray-500">Wedding Website Template</p>
-                               </div>
+                             {/* Video Title */}
+                             <div className="p-4 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 left-0 right-0 text-white">
+                               <h3 className="text-lg font-medium">Wedding Website Showcase</h3>
+                               <p className="text-sm text-gray-300">Beautiful wedding photography portfolio</p>
                              </div>
                            </div>
                          </PopoverContent>

@@ -3,27 +3,27 @@ import { Code, Palette, Smartphone, Zap, Globe, Users } from "lucide-react";
 const services = [{
   icon: Code,
   title: "Web Development",
-  description: "Custom websites built with modern technologies for optimal performance and scalability."
+  description: "Modern, scalable websites built with cutting-edge technologies."
 }, {
   icon: Palette,
   title: "UI/UX Design",
-  description: "Intuitive and engaging user interfaces that enhance user experience and drive conversions."
+  description: "Beautiful interfaces that engage users and drive conversions."
 }, {
   icon: Smartphone,
   title: "Responsive Design",
-  description: "Mobile-first approach ensuring your website looks perfect on all devices and screen sizes."
+  description: "Perfect performance across all devices and screen sizes."
 }, {
   icon: Zap,
   title: "Performance Optimization",
-  description: "Lightning-fast loading speeds and optimized performance for better user engagement."
+  description: "Lightning-fast speeds for optimal user experience."
 }, {
   icon: Globe,
   title: "SEO Integration",
-  description: "Search engine optimized websites to improve visibility and drive organic traffic."
+  description: "Enhanced visibility and organic traffic growth."
 }, {
   icon: Users,
   title: "Ongoing Support",
-  description: "Continuous maintenance and support to keep your website running smoothly and updated."
+  description: "Reliable maintenance to keep your site running smoothly."
 }];
 const ServicesSection = () => {
   const [visibleItems, setVisibleItems] = useState<number[]>([]);

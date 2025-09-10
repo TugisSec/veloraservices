@@ -7,7 +7,7 @@
 @layer base {
   :root {
     /* Base colors - Clean and minimal */
-    --background: 38 3% 94%;
+    --background: 183 3% 73%;
     --foreground: 220 15% 15%;
 
     /* Cards and surfaces */
